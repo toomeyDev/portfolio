@@ -3,7 +3,8 @@
 }
 
 html {
-    background-color: #E8E9F3;
+    background-color: #417b5a;
+    font-size: 1.2rem;
 }
 
 /* header styling (navbar, logo text) */
@@ -11,13 +12,13 @@ html {
     display: flex;
     justify-content: space-between;
 
-    /* for testing only */
-    background-color: #CAFF8A;
+    background-color: #020402;
+    margin-bottom: 2rem;
 }
 
 .header ul {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     margin: 0;
@@ -29,19 +30,20 @@ html {
 
 .header ul li a {
     text-decoration: none;
-    color: black;
+    color: #F06449;
 }
 
 .header ul li:hover {
-    background-color: #EB5160;
+    background-color: #EDE6E3;
 }
 
 .header ul li a:hover {
-    color: white;
+    color: black;
 }
 
 .header h2 {
-    padding-right: 30px;
+    padding-right: 2rem;
+    color: #F06449;
 }
 
 /* styling for main content container */
@@ -54,13 +56,15 @@ html {
 /* hero-content styling */
 .hero {
     align-self: center;
-    background-color: lightgrey;
+    background-color: #38694e;
+    padding: 2rem;
 }
 
 .hero img {
     width: 800px;
     height: 600px;
-    padding: 25px;
+    padding: 1rem;
+    background-color: #EDE6E3;
 }
 
 .hero h3 {
@@ -69,19 +73,24 @@ html {
 
 /* showcase-content styling */
 .showcase {
+    align-self: center;
+    width: 85%;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: lightgreen;
+    background-color: #38694e;
     padding: 20px;
 }
 
 .showcase .article {
     display: flex;
+    background-color: #DADAD9;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 25%;
+    padding-top: 1rem;
 }
 
 .showcase img {
@@ -89,12 +98,14 @@ html {
     height: 300px;
 }
 
-
 .footer {
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 0px 20px;
+    padding: 0rem 1.4rem 0rem 1.4rem;
     text-align: center;
     /* for testing only */
-    background-color: lightblue;
+    background-color: #020402;
+    color: #f06449;
+    font-size: 0.9rem;
 }
