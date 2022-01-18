@@ -58,9 +58,14 @@ html {
     align-self: center;
     background-color: #38694e;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero img {
+    align-self: center;
     width: 800px;
     height: 600px;
     padding: 1rem;
