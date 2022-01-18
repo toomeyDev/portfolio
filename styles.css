@@ -7,6 +7,11 @@ html {
     font-size: 1.2rem;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 /* header styling (navbar, logo text) */
 .header {
     display: flex;
@@ -53,10 +58,13 @@ html {
 }
 
 
+/* homepage-specific styling */
+
 /* hero-content styling */
 .hero {
     align-self: center;
     background-color: #38694e;
+    border-radius: 1rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -72,8 +80,23 @@ html {
     background-color: #EDE6E3;
 }
 
+.hero p {
+    align-self: center;
+    text-align: center;
+    width: 50%;
+}
+
 .hero h3 {
     text-align: center;
+}
+
+.hero h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero h3 a:hover {
+    color: #F06449;
 }
 
 /* showcase-content styling */
@@ -85,6 +108,7 @@ html {
     justify-content: space-around;
     align-items: center;
     background-color: #38694e;
+    border-radius: 1rem;
     padding: 20px;
 }
 
@@ -103,6 +127,25 @@ html {
     height: 300px;
 }
 
+/* about page styling */
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-intro h3 {
+    width: 100%;
+}
+
+.about-intro h3, .about-intro p {
+    align-self: center;
+}
+
+/* general footer styling */
 .footer {
     margin-top: 2rem;
     display: flex;
