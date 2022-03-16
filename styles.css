@@ -157,3 +157,11 @@ body {
     color: #f06449;
     font-size: 0.9rem;
 }
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    color: orange;
+}
