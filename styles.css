@@ -191,3 +191,55 @@ a {
 a:hover {
     color: orange;
 }
+
+/* breakpoint for medium screen sizes */
+@media only screen and (max-width: 1500px) {
+    .showcase {
+        flex-direction: column;
+    }
+
+    .showcase .article {
+        width: 90%;
+        margin-bottom: 2%;
+    }
+  }
+
+/* breakpoint for small screen sizes (mobile layout) */
+@media only screen and (max-width: 800px) {
+    .hero {
+        border-radius: 0;
+        
+    }
+
+    .hero img {
+        width: 90%;
+        height: 100%;
+        
+    }
+    .showcase {
+        flex-direction: column;
+    }
+
+    .showcase .article {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main {
+        text-align: center;
+        
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+}
