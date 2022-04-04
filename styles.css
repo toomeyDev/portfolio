@@ -82,6 +82,7 @@ body {
     height: 600px;
     padding: 1rem;
     background-color: #EDE6E3;
+    border-radius: 1rem;
 }
 
 .hero p {
@@ -113,7 +114,7 @@ body {
     align-items: center;
     background-color: #38694e;
     border-radius: 1rem;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .showcase .article {
@@ -124,6 +125,9 @@ body {
     align-items: center;
     text-align: center;
     width: 25%;
+    border-radius: 1.5%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-top: 1rem;
 }
 
@@ -134,7 +138,7 @@ body {
 .showcase img {
     width: 300px;
     height: 300px;
-    border-radius: 3%;
+    border-radius: 0.5%;
     border: 2px solid black;
 }
 
@@ -145,15 +149,18 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    align-self: center;
+    width: 50%;
 }
 
 .about-intro h3 {
-    width: 100%;
+
+    text-align: center;
 }
 
 .about-intro h3, .about-intro p {
     align-self: center;
+    text-align: justify;
 }
 
 /* contact page styling */
@@ -167,6 +174,11 @@ body {
     border-radius: 5px;
     width: 50%;
     margin: auto;
+}
+
+/* styling for information sections */
+.gen-info {
+    padding: 2rem;
 }
 
 /* general footer styling */
@@ -196,11 +208,17 @@ a:hover {
 @media only screen and (max-width: 1500px) {
     .showcase {
         flex-direction: column;
+        border-radius: 0;
+        width: 100%;
     }
 
     .showcase .article {
         width: 90%;
         margin-bottom: 2%;
+    }
+
+    .gen-info {
+        text-align: center;
     }
   }
 
@@ -227,8 +245,10 @@ a:hover {
 
     .header {
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        
+        text-align: center;
+        width: 100%;
     }
 
     .main {
