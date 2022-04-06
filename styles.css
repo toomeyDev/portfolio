@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 html {
@@ -13,6 +13,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+/* styling for anchor tags */
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    color: orange;
 }
 
 /* header styling (navbar, logo text) */
@@ -74,6 +84,7 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 .hero img {
@@ -135,6 +146,19 @@ body {
     color: black;
 }
 
+.article-header a:hover {
+    color: #F06449;
+}
+
+.article p a {
+    color: black;
+    text-decoration: none;
+}
+
+.article p a:hover {
+    color: #F06449;
+}
+
 .showcase img {
     width: 300px;
     height: 300px;
@@ -176,6 +200,14 @@ body {
     margin: auto;
 }
 
+.contact-info a {
+    color: black;
+}
+
+.contact-info a:hover {
+    color: yellow;
+}
+
 /* styling for information sections */
 .gen-info {
     padding: 2rem;
@@ -194,16 +226,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* styling for anchor tags */
-
-a {
-    color: yellow;
-}
-
-a:hover {
-    color: orange;
-}
-
 /* breakpoint for medium screen sizes */
 @media only screen and (max-width: 1500px) {
     .showcase {
@@ -220,13 +242,16 @@ a:hover {
     .gen-info {
         text-align: center;
     }
+
+    .hero {
+        width: 100%;
+    }
   }
 
 /* breakpoint for small screen sizes (mobile layout) */
 @media only screen and (max-width: 800px) {
     .hero {
         border-radius: 0;
-        
     }
 
     .hero img {
@@ -239,7 +264,7 @@ a:hover {
     }
 
     .showcase .article {
-        width: 100%;
+        width: 80%;
         margin-bottom: 4%;
     }
 
