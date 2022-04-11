@@ -121,6 +121,7 @@ a:hover {
     width: 85%;
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #38694e;
@@ -140,6 +141,7 @@ a:hover {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 1rem;
+    margin: 2%;
 }
 
 .article-header a{
@@ -236,6 +238,7 @@ a:hover {
 
     .showcase .article {
         width: 90%;
+        margin: 0;
         margin-bottom: 2%;
     }
 
