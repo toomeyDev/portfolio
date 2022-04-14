@@ -230,6 +230,16 @@ a:hover {
 
 /* breakpoint for medium screen sizes */
 @media only screen and (max-width: 1500px) {
+
+	
+	.main {
+		font-size: 1.4rem;
+	}
+	
+	.footer {
+		font-size: 0.92rem;
+	}
+	
     .showcase {
         flex-direction: column;
         border-radius: 0;
@@ -277,8 +287,18 @@ a:hover {
         align-items: center;
         text-align: center;
         width: 100%;
+        font-size: 1.2rem;
     }
-
+	
+	.header ul {
+		display: flex;
+	}
+	
+	.header li {
+		font-size: 1.8rem;
+		width: 100%;
+	}
+	
     .main {
         text-align: center;
         
@@ -289,5 +309,6 @@ a:hover {
         flex-direction: column;
         padding: 0;
         margin: 0;
+        font-size: 1.2rem;
     }
 }
