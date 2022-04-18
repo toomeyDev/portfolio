@@ -130,13 +130,12 @@ a:hover {
 }
 
 .showcase .article {
-    display: flex;
+    display: block;
     background-color: #DADAD9;
     border: 2px solid transparent;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 25%;
+    height: 25%;
     border-radius: 1.5%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -228,7 +227,24 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* breakpoint for medium screen sizes */
+/* breakpoint for standard-large (1920x1080p) screens */
+@media only screen and (max-width: 1920px) {
+    .showcase {
+        width:100%;
+    }
+
+    .showcase .article {
+        width: 40%;
+        
+    }
+
+    .showcase img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* breakpoint for medium screen sizes ( < 1920x1080p)*/
 @media only screen and (max-width: 1500px) {
 
 	
@@ -263,45 +279,78 @@ a:hover {
 
 /* breakpoint for small screen sizes (mobile layout) */
 @media only screen and (max-width: 800px) {
+    
+    body {
+        width: screen;
+    }
+
+    html {
+        width: screen;
+    }
+    
     .hero {
         border-radius: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .hero img {
         width: 90%;
         height: 100%;
+        padding: 0;
         
     }
     .showcase {
         flex-direction: column;
+        padding: 2rem 0 0 0;
     }
 
     .showcase .article {
-        width: 80%;
+        width: screen;
         margin-bottom: 4%;
+        font-stretch: condensed;
+        border-radius: 0;
     }
 
     .header {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        text-align: center;
-        width: 100%;
+        width: screen;
         font-size: 1.2rem;
     }
-	
-	.header ul {
-		display: flex;
-	}
-	
+
 	.header li {
 		font-size: 1.8rem;
-		width: 100%;
+		width: screen;
 	}
-	
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    
+        background-color: #020402;
+        margin-bottom: 2rem;
+    }
+    
+    .header ul {
+        list-style-type: none;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .header ul li {
+        padding: 0.5rem;
+    }
+    
+    .header h2 {
+        padding: 0rem;
+    }
+
     .main {
-        text-align: center;
-        
+        width: screen;
     }
 
     .footer {
@@ -310,5 +359,6 @@ a:hover {
         padding: 0;
         margin: 0;
         font-size: 1.2rem;
+        width: screen;
     }
 }
